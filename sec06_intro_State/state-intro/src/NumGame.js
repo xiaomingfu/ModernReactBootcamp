@@ -14,7 +14,10 @@ class NumGame extends Component{
         return (
             <div>
                 <h1>Number is: {this.state.num} </h1>
-                <button onClick={this.click}>Random Number</button>
+                <div>
+                    <button onClick={this.click}>Random Number</button>
+                    <h1>{this.state.num === 7 ? "You win!" : <button></button> }</h1>
+                </div>
             </div>
         )
     }
