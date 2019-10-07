@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import LotteryBall from './LotteryBall';
+import './RunLottery.css';
 
 class RunLottery extends Component{
     static defaultProps = {
