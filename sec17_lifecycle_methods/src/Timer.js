@@ -4,13 +4,15 @@ class Timer extends Component {
     constructor(props) {
         super(props);
         this.state = { time: new Date() }
-        console.log(this.state.time)
+        console.log("In comstructor")
     }
     componentDidMount() {
         this.timerID = setInterval(() => {
             this.setState({ time: new Date() })
         }, 1000)
+        console.log("in component did mount")
     }
+
     render() {
         console.log("In render")
         return (
