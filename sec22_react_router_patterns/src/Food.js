@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 class Food extends Component {
 
     render() {
-        const name = this.props.match.params.name;
-        const url = `https://source.unsplash.com/1600x900/?${name}`;
+        const foodName = this.props.match.params.name;
+        const url = `https://source.unsplash.com/1600x900/?${foodName}`;
         return (
             <div>
-                <h1>I like eating {name} </h1>
-                <img src={url} alt={name} />
+                <h1>I like eating {foodName}</h1>
+                <img src={url} alt={foodName} />
             </div>
         )
     }
