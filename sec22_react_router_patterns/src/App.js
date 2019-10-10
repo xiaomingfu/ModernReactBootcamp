@@ -4,13 +4,15 @@ import './App.css';
 import Food from './Food';
 import Meal from './Meal';
 import Search from './Search';
+import Navbar from './Navbar';
 import { Route, Switch, Link } from 'react-router-dom';
-
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* alway show navbar */}
+        <Navbar />
         <Switch>
           {/* Render can take more props and more explict */}
           {/* <Route exact path="/food/:name"
