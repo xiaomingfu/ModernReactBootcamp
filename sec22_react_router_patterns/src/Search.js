@@ -6,9 +6,16 @@ class Search extends Component {
         super(props);
         this.state = { query: "" };
         this.handleChange = this.handleChange.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
     handleChange(e) {
         this.setState({ query: e.target.value })
+    }
+    handleClick() {
+        //do something
+        console.log("SAVE YOUR FOOD TO DB!");
+        //redirect to somewhere else
+        this.props.history.push(`/food/${this.state.query}`)
     }
     render() {
         return (
@@ -22,6 +29,7 @@ class Search extends Component {
                 />
                 {/* Take to another route */}
                 <Link to={`/food/${this.state.query}`} >Go</Link>
+                <button onClick={this.handleClick}>Submit</button>
             </div>
         )
     }
