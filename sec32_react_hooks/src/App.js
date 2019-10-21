@@ -6,6 +6,7 @@ import CouterHook from "./CouterHook";
 import Toggler from "./Toggler";
 import SimpleFormClass from "./SimpleFormClass";
 import SimpleFormHook from "./SimpleFormHook";
+import Clicker from "./Clicker";
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       <Toggler />
       <SimpleFormClass />
       <SimpleFormHook />
+      <Clicker />
     </div>
   );
 }
