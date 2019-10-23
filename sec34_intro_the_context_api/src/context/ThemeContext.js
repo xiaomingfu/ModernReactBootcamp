@@ -9,7 +9,7 @@ export class ThemeProvider extends Component {
   }
   render() {
     return (
-      <ThemeContext.Provider vaule={{ ...this.state, tasteLikeChicken: true }}>
+      <ThemeContext.Provider value={{ ...this.state }}>
         {this.props.children}
       </ThemeContext.Provider>
     );
