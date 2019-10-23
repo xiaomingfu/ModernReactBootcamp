@@ -21,3 +21,15 @@ export class LanguageProvider extends React.Component {
     );
   }
 }
+
+export const withLanguageContext = function(Component) {
+  const innerFunction = function(props) {
+    return (
+      <LanguageContext.Consumer>
+        {value => <Component languageContext={value} {...props} />}
+      </LanguageContext.Consumer>
+    );
+  };
+
+  return innerFunction;
+};
