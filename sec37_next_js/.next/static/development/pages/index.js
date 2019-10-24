@@ -50,16 +50,17 @@ var _jsxFileName = "/Users/xiaoming/coding/ModernReactBootcamp/sec37_next_js/pag
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var Hello = function Hello() {
+  console.log("*****RUN THE INDEX COMPONENT*****");
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2
+      lineNumber: 4
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3
+      lineNumber: 5
     },
     __self: this
   }, "Our Index Page!!"));
