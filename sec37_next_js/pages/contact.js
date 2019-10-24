@@ -1,7 +1,9 @@
 const ContactPage = () => {
+  console.log("*****RUN THE CONTACT COMPONENT*****");
   return (
     <div>
-      <h1>NEVER CONTACT US!!!</h1>
+      <h1>CONTACT PAGE</h1>
+      <p>NEVER CONTACT US!!!</p>
     </div>
   );
 };
