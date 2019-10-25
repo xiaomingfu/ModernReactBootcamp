@@ -12271,6 +12271,7 @@ function (_Component) {
           __self: this
         }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
           href: "/post/?id=".concat(post.id),
+          as: "/p/".concat(post.id),
           __source: {
             fileName: _jsxFileName,
             lineNumber: 22

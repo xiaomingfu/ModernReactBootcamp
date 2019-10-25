@@ -1848,6 +1848,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       href: `/post/?id=${post.id}`,
+      as: `/p/${post.id}`,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 22
