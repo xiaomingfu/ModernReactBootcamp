@@ -10559,7 +10559,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/xiaoming/coding/ModernReactBootcamp/sec37_next_js/pages/post.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 
@@ -10569,26 +10568,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 var Post = function Post(_ref) {
   var id = _ref.id,
       comments = _ref.comments;
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, __jsx("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, "Comment for Post #", id), comments.map(function (comment) {
+  return __jsx("div", null, __jsx("h1", null, "Comment for Post #", id), comments.map(function (comment) {
     return __jsx(Comment, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__["default"])({}, comment, {
-      key: comment.id,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
+      key: comment.id
     }));
   }));
 };
@@ -10596,25 +10578,7 @@ var Post = function Post(_ref) {
 var Comment = function Comment(_ref2) {
   var email = _ref2.email,
       body = _ref2.body;
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, __jsx("h5", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, email), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, body));
+  return __jsx("div", null, __jsx("h5", null, email), __jsx("p", null, body));
 };
 
 Post.getInitialProps =

@@ -12222,7 +12222,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/xiaoming/coding/ModernReactBootcamp/sec37_next_js/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
 
@@ -12243,47 +12242,13 @@ function (_Component) {
     key: "render",
     value: function render() {
       var posts = this.props.posts;
-      return __jsx("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
-      }, __jsx("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: this
-      }, "Our Index Page!!"), __jsx("ul", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        },
-        __self: this
-      }, posts.map(function (post) {
+      return __jsx("div", null, __jsx("h1", null, "Our Index Page!!"), __jsx("ul", null, posts.map(function (post) {
         return __jsx("li", {
-          key: post.id,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 21
-          },
-          __self: this
+          key: post.id
         }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
           href: "/post/?id=".concat(post.id),
-          as: "/p/".concat(post.id),
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 22
-          },
-          __self: this
-        }, __jsx("a", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 23
-          },
-          __self: this
-        }, post.title)));
+          as: "/p/".concat(post.id)
+        }, __jsx("a", null, post.title)));
       })));
     }
   }], [{
@@ -12347,7 +12312,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!******************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fxiaoming%2Fcoding%2FModernReactBootcamp%2Fsec37_next_js%2Fpages%2Findex.js ***!
   \******************************************************************************************************************************************************/
@@ -12370,5 +12335,5 @@ module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
