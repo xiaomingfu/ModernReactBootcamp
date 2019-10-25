@@ -104,43 +104,78 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/xiaoming/coding/ModernReactBootcamp/sec37_next_js/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
- // class Index extends Component {
-//   constructor(props) {
-//     super(props);
-//   }
-//   static async getInitialProps() {
-//     console.log("FETCHING DATA INSIDE GETINITIALPROPS");
-//   }
-//   render() {
-//     return (
-//       <div>
-//         <h1>Our Index Page!!</h1>
-//       </div>
-//     );
-//   }
-// }
 
-const Index = () => {
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: undefined
-  }, __jsx("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: undefined
-  }, "Our Index Page!!"));
-};
 
-Index.getInitialProps = async () => {
-  console.log("FETCHING DATA INSIDE GETINITIALPROPS");
-};
+
+class Index extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+  }
+
+  static async getInitialProps() {
+    const res = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("https://jsonplaceholder.typicode.com/posts");
+    const {
+      data
+    } = res;
+    return {
+      posts: data
+    };
+  }
+
+  render() {
+    const {
+      posts
+    } = this.props;
+    return __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, __jsx("h1", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, "Our Index Page!!"), __jsx("ul", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, posts.map(post => __jsx("li", {
+      key: post.id,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, post.title))));
+  }
+
+} // const Index = ({ posts }) => {
+//   return (
+//     <div>
+//   <h1>Our Index Page!!</h1>
+//   <ul>
+//     {posts.map(post => (
+//       <li key={post.id}>{post.title}</li>
+//     ))}
+//   </ul>
+//     </div>
+//   );
+// };
+// Index.getInitialProps = async () => {
+//   const res = await axios.get("https://jsonplaceholder.typicode.com/posts");
+//   const { data } = res;
+//   return { posts: data };
+// };
+
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
@@ -155,6 +190,17 @@ Index.getInitialProps = async () => {
 
 module.exports = __webpack_require__(/*! /Users/xiaoming/coding/ModernReactBootcamp/sec37_next_js/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
 
 /***/ }),
 

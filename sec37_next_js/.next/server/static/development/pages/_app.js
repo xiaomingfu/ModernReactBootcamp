@@ -126,7 +126,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about",
+    href: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
@@ -138,8 +138,8 @@ const Navbar = () => {
       lineNumber: 13
     },
     __self: undefined
-  }, "about page")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/contact",
+  }, "Home page")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/about",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -151,7 +151,7 @@ const Navbar = () => {
       lineNumber: 16
     },
     __self: undefined
-  }, "Contact page")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "About page")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/contact",
     __source: {
       fileName: _jsxFileName,

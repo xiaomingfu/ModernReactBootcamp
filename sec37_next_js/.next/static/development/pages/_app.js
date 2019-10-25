@@ -33,7 +33,7 @@ var Navbar = function Navbar() {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about",
+    href: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
@@ -45,8 +45,8 @@ var Navbar = function Navbar() {
       lineNumber: 13
     },
     __self: this
-  }, "about page")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/contact",
+  }, "Home page")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/about",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -58,7 +58,7 @@ var Navbar = function Navbar() {
       lineNumber: 16
     },
     __self: this
-  }, "Contact page")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "About page")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/contact",
     __source: {
       fileName: _jsxFileName,

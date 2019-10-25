@@ -8,12 +8,12 @@ const Navbar = () => {
   };
   return (
     <div style={style}>
-      <Link href="/about">
+      <Link href="/">
         {/* <link> pass a Click to chilren component */}
-        <a>about page</a>
+        <a>Home page</a>
       </Link>
-      <Link href="/contact">
-        <a>Contact page</a>
+      <Link href="/about">
+        <a>About page</a>
       </Link>
       <Link href="/contact">
         <a>Contact page</a>
