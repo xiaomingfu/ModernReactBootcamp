@@ -1,7 +1,6 @@
 {
   "name": "sec37_next_js",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "node server2.js",
@@ -13,9 +12,12 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.0",
-    "express": "^4.17.1",
-    "next": "^9.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
+  },
+  "description": "",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "next": "^9.1.1"
   }
 }
