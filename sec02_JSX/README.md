@@ -1,0 +1,5 @@
+- JSX: a syntax extension to JavaScript, a syntactic sugar for `React.createElement(component, props, ...children)`
+- reason to use JSX: react embraces the rending logic with other UI logic:
+  - event handle
+  - state change
+  - data is prepared for display

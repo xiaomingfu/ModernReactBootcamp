@@ -1,68 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### State
 
-## Available Scripts
+- State is designed to constantly change in response to events
+- State track:
+  - UI logic: the changing state of the interface
+  - business logic: the changing state of data
 
-In the project directory, you can run:
+##### Vanilla / jQuery State
 
-### `npm start`
+The way to track the state with jQuery was by selecting DOM elements and seeing if they were displayed/hidden, or if they had certain styles or attributes
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##### React State
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- state is an instance attribute on a component. It's always an object, since you'll want to keep track of several key/values
+- internal data specific to a component
+- data that changes over time
 
-### `npm test`
+##### React constructor Function
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`constructor(props){ super(props); this.state = {} }`
 
-### `npm run build`
+##### Chaning State
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`this.setState()` is the built-in React method
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- Can call in amy instance method except the constructor
+- Takes an object describing the state changes
+- Patches state object
+- Asychronous
+  - The component state will eventually update
+  - React controls when the stae will actually change
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### React Events
 
-### `npm run eject`
+- State most commonly changes in direct response to some event
+- In React, every JSX element has built-in attribute responsing every kind of browser event
+- They are camel-cased, like `onClick` and take callback functions as event listeners
+- use `.bind` in the constructor function to bind this to the instance
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##### State vs Props
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- state stores changing component data
+- props stores component configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+##### State as Props
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+A common pattern is stateful parent component passing down its state values as props to stateless child components
